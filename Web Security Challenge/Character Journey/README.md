@@ -4,7 +4,7 @@ Lets visit the url
 
 ![image](https://github.com/user-attachments/assets/2df344bf-3b51-406e-9dd9-0fda0e552279)
 
-Lets check for its source code and anything using browser's extension like Wappalyzer
+Lets check for its source code and anything using browser's extension like Wappalyzer.
 
 ![image](https://github.com/user-attachments/assets/670716ba-7e43-48b2-8374-b2af7d120931)
 
@@ -26,7 +26,7 @@ While the Feedback's page have comment's section so I tried to do some xss to in
 
 ![image](https://github.com/user-attachments/assets/cfef8fb7-1b30-457c-bd73-8157fbc1f87b)
 
-Found something that's exploitable on My account's page
+Found something that's exploitable on My account's page.
 
 ![image](https://github.com/user-attachments/assets/ca692f1d-e6ce-41ec-9d2c-d52d0d8f20cb)
 
@@ -34,7 +34,7 @@ Noticed that the url show us the userID's value thats not using GUID? Lets try t
 
 ![image](https://github.com/user-attachments/assets/8d96aeaa-bff8-44c6-8212-4f920991c660)
 
-Yep! It works! So, all I need to do now is enumerate until I found admin's credential. Lets fire up Burp and send it to Intruder
+Yep! It works! So, all I need to do now is enumerate until I found admin's credential. Lets fire up Burp and send it to Intruder.
 
 As usual, add the "§" symbol at our payload and set the payload settings to use numbers. In this case, I chose from 0 to 100 for early testing.
 
@@ -43,16 +43,14 @@ As usual, add the "§" symbol at our payload and set the payload settings to use
 
 ![image](https://github.com/user-attachments/assets/80c1e765-5881-4046-b969-c58adcfe3667)
 
+Don't forget to add grep so that later on we will be notified if we managed to grep admin's page.
 
-![image](https://github.com/user-attachments/assets/073d706b-dfe3-4a4a-b4f2-daf9c7516b77)
+![image](https://github.com/user-attachments/assets/dc6dd896-6c0d-41b6-9f7f-8e2c95386975)
 
+And... we hit the jackpot.
 
+![image](https://github.com/user-attachments/assets/b6771496-d63f-43d0-9ab9-cf08afa4605e)
 
-
-
-
-
-
-
+The admin's page is on userID=53 and there is our flag.
 
 ![character journey](https://github.com/user-attachments/assets/d4f0c5d8-fe93-484e-b700-61700fad3cc3)
