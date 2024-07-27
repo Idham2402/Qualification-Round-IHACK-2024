@@ -34,7 +34,18 @@ Noticed that the url show us the userID's value thats not using GUID? Lets try t
 
 ![image](https://github.com/user-attachments/assets/8d96aeaa-bff8-44c6-8212-4f920991c660)
 
-Yep! It works! Now all i need to do is enumerate until i found admin's credential.
+Yep! It works! So, all I need to do now is enumerate until I found admin's credential. Lets fire up Burp and send it to Intruder
+
+As usual, add the "§" symbol at our payload and set the payload settings to use numbers. In this case, I chose from 0 to 100 for early testing.
+
+![image](https://github.com/user-attachments/assets/54e09a14-8963-474f-98be-6682b9c257cc)
+
+
+![image](https://github.com/user-attachments/assets/80c1e765-5881-4046-b969-c58adcfe3667)
+
+
+![image](https://github.com/user-attachments/assets/073d706b-dfe3-4a4a-b4f2-daf9c7516b77)
+
 
 
 
