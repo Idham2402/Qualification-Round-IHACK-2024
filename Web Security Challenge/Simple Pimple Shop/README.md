@@ -18,7 +18,7 @@ Hmmm, it has url for the image so lets try for path traversal and see if we mana
 
 ![image](https://github.com/user-attachments/assets/e7ee46ed-c699-4472-8384-f9b2248ea8be)
 
-And.. hit it enter.
+And.. hit enter.
 
 ![image](https://github.com/user-attachments/assets/b95720b2-4281-4a05-bd1f-64dfc93d7fff)
 
