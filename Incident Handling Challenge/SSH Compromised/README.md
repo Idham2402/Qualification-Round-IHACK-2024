@@ -10,4 +10,8 @@ Looks like we got `auth.log` here which is security log for SSH's session establ
 
 ![image](https://github.com/user-attachments/assets/5fa2fb78-af7b-4ed5-b2fe-4822acbcda67)
 
+So our clue here is "successful login". All I need to do is find the keywords for successful's ssh such as `Success` or `Accepted`.
 
+![image](https://github.com/user-attachments/assets/acfc9b1d-c3a3-4a11-b8c0-7b76e021b4e2)
+
+And... we found it. So the flag will be `ihack24{149.102.244.68_sysadmin}`
