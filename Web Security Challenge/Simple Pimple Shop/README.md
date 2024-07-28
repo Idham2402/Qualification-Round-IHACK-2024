@@ -60,7 +60,7 @@ Alright! Looks like we know exactly which Ruby that its using which is Slim(Ruby
 
 ![image](https://github.com/user-attachments/assets/98c7cd45-d7bb-4050-8e83-776ff50151d4)
 
-Injected it but it just reflect normally without doing the expression. I was unsatisfied, so I look more into other payloads such as at PayloadsAllTheThings, https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection#ruby
+Injected it but it just reflect normally without doing the expression. I was unsatisfied, so I look more into other payloads such as at [PayloadAllTheThings]
 
 ![image](https://github.com/user-attachments/assets/80aca9fa-e661-401b-9f41-ea446cc65587)
 
