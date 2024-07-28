@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/89083f6e-1c49-45e4-b0a4-47968f61ee25)![image](https://github.com/user-attachments/assets/3dc52817-4498-41b5-9183-6c08e349afc5)
+![image](https://github.com/user-attachments/assets/3dc52817-4498-41b5-9183-6c08e349afc5)
 
 First things first, lets visit the url.
 
