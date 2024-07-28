@@ -24,7 +24,7 @@ I see, lets check the network configuration to see if it could access the networ
 
 On the splunk's server, the first thing that I filtered was `index=security EventCode="4625"| reverse` and check the time for when the bruteforce happened. Then I compared it with successful login using this filtered `index=security EventCode="4624"| reverse` and managed to make deduction where if there were any successful login from 9.55PM onwwards, that would be the attacker. But my query for EventCode="4624" was not proven due to its only show log before 9:55PM. So I have to read from another log which is sysmon using `index=sysmon EventCode="4624" | reverse`. 
 
-Then, based on that I make deductions if the attackers were bruteforcing our machine and the target was RDP's service, it would be likely using RDP's port which is 3389. So I filtered the port and check the ip address that involve and I make my assumption that the ip with the most attempts was the attacker.
+Then, based on that I make deductions if the attackers were bruteforcing our machine and the target was RDP's service, it would be likely using RDP's port which is 3389. So I filtered the port and check the ip address that involve and I make my assumption that the ip with the most attempts was the targeted machine.
 
 ![splnuk3](https://github.com/user-attachments/assets/67db6d3f-6750-47e7-a411-edba8f9a0b21)
 
