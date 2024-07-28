@@ -18,4 +18,18 @@ And then I realised, this is too hard to read the logs here. So, I opt for readi
 
 ![image](https://github.com/user-attachments/assets/316ac056-048d-4045-aab5-c849391a559a)
 
+I see, lets check the network configuration to see if it could access the network or not.
 
+(PS: From this point, I forgot already how I resolve this so that my ipv4 would appear when I use command like `ip addr show` or `ifconfig`
+
+On the splunk's server, the first thing that I filtered was `index=security EventCode="4625"| reverse` and check the time for when the bruteforce happened. Then I compared it with successful login using this filtered `index=security EventCode="4624"| reverse` and managed to make deduction where if there were any successful login from 9.55PM onwwards, that would be the attacker. But my query for EventCode="4624" was not proven due to its only show log before 9:55PM. So I have to read from another log which is sysmon using `index=sysmon EventCode="4624" | reverse`. 
+
+Then, based on that I make deductions if the attackers were bruteforcing our machine and the target was RDP's service, it would be likely using RDP's port which is 3389. So I filtered the port and check the ip address that involve and I make my assumption that the ip with the most attempts was the attacker.
+
+![splnuk3](https://github.com/user-attachments/assets/67db6d3f-6750-47e7-a411-edba8f9a0b21)
+
+![splunk1](https://github.com/user-attachments/assets/643391d2-c9d1-4b45-8046-69826861dce3)
+
+While for the username part, I make deduction based on the account's name being succesful logon from this query `index=security EventCode="4625"| reverse`.
+
+So the flag will be ihack24{admin:192.168.8.52}
